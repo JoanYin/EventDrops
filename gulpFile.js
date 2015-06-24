@@ -20,6 +20,7 @@ function bundle(watching, done) {
         packageCache: {}, // required for watchify
         fullPaths: watching // required to be true only for watchify
     });
+
     if (watching) {
         bundler = watchify(bundler);
     }
